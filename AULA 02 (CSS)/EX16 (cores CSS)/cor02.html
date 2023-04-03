@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes em CSS</title>
+    <style>
+        /* configuração global para fazer degradê no CSS, ou seja, para colocar na pag inteira o degradê criado */
+        * {height: 100%;}
+
+
+        /* Da para falar o sentido e direção que vai ser o degradê usando:  
+        (to top) de cima para baixo, (to right) da esquerda para a direita,
+        (to left) da direita para a esquerda, (to bottom) de baixo para cima */
+    body    {
+            background-image: linear-gradient(to left, #060D1E, #027488, #3460B1,#005DAC, #0995B7,#103688);
+            background-attachment: fixed;
+
+            /* Esse é o exemplo do instagram com varias cores descobertas pelo ADOBE COLORS
+            background-image: linear-gradient(#8509FD, #FE00E1, #EE028A,#FF1759,#FF7200, #FFC801) */
+            
+            /* Esse modo é digitando as cores e colocando a posição do degradê
+            background-image: linear-gradient(to right, white, blue, green, yellow, red); */
+
+            /* Esse modo é mais simples com apenas duas cor
+            background-image: linear-gradient(#B5C4FA, #404A7A);
+            background-attachment: fixed; */
+            } 
+            
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+</body>
+</html>

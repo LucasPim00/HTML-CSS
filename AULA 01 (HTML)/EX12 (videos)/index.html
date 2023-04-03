@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/Troféu.png" type="image/x-icon">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+    <video src="midia/video.mp4"width="250" height="250" controls ></video>
+
+    <p>Tambem tem outra forma que é considerada melhor</p>
+    <video  width="250" height="250" poster="midia/imagem.jpg" controls loop >
+        <source src="midia/video.mp4" type="video/mp4">
+    <p>Seu navegador não tem compatibilidade para reprodução do video!</p>
+     
+    </video>
+    <p>Porém videos muito pesados podem trazer muitos custos para manter o site no ar!
+        Por esse motivo é bom fazer da seguinte forma:
+    </p>
+
+    <h1>Inserindo video animado do youtube</h1>
+    <p>Assim você vai manter o video no seu site e não vai pagar pelo video pois é um video do youtube</p>
+    <!-- Vai no youtube pega um video, clica em 'compartilhar-incoporar-copiar', 
+        assim ja vai copiar o video em forma de HTML codificado -->
+    <iframe width="250" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     allowfullscreen></iframe>
+
+    <p>Se não quiser que o video seja de forma publica ja que é do youtube, tem um site chamado <b>VIMEO</b>!
+        Neste site você pode deixar os videos de forma privada e com melhor proporção.
+    </p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{font-family: 'Courier New', Courier, monospace;
+            font-size: 1em ;}
+        
+        h1 {
+            /* Jeito detalhado que todos os programador faz! */
+            /* font-family: Verdana, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic; */           
+
+            /* Jeito resumido seria assim:
+            Propriedade shorthand font ou seja por sequencia
+            Sequencia é:
+            {font-style; font-weight; font-size; font-family}
+            Exemplo de cima em modo resumido (sequencia) ficaria assim:: */
+            font: italic bolder 2em verdana, Tahoma, sans-serif;
+        }
+        
+
+        /* h1, h2 {font-family: Impact, 'Arial Narrow Bold', sans-serif;} */
+    </style>
+
+    <!-- TAMANHO DA FONTE
+        MEDIDAS ABSOLUTAS: cm, mm, in, px, pt, pc (recomendada PX)
+        16px = 1em
+        MEDIDAS RELATIVAS: em, ex, rem, vw, vh, % (recomendada EM)-->
+
+     <!-- PESO DA FONTE (nivel do negrito)
+        font-weight: 100; NORMAL E NUMERAL(se a fonte é mais gorda ou mais magra) 
+        font-weight: lighter; MAGRA
+        font-weight: bold;GORDA
+        font-weight: bolder;OBESA-->
+
+    <!-- ESTILO DE FONTE PARA CORPO CSS (italica, normal e inclinada)
+        font-style: italic; ITALICA -->
+
+    <!-- ESTILO SUBLINADO PARA CORPO CSS (porem tem varios tipos)
+        text-decoration: underline;-->
+
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Numquam sit alias consequuntur cupiditate sed quas non similique illum,
+    aliquid veritatis quaerat eligendi assumenda. Fuga voluptatem repellendus quisquam, nam possimus iure?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Numquam sit alias consequuntur cupiditate sed quas non similique illum,
+    aliquid veritatis quaerat eligendi assumenda. Fuga voluptatem repellendus quisquam, nam possimus iure?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Numquam sit alias consequuntur cupiditate sed quas non similique illum,
+    aliquid veritatis quaerat eligendi assumenda. Fuga voluptatem repellendus quisquam, nam possimus iure?</p>
+    <h2>Subtítulo do Exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+    doloribus corporis autem accusantium nesciunt repellat itaque 
+    tempora voluptas perspiciatis voluptates maiores nostrum ad nulla minus explicabo illo recusandae quam aperiam.</p>
+</body>
+</html>
