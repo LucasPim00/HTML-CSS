@@ -17,9 +17,24 @@
             {border: 1px solid black;
             padding: 10px;}
 
+        caption
+            {font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: black;
+            color: white;}
+
         thead, tfoot
             {background-color: gray;
             color: white;}
+
+        tbody > tr:nth-child(odd) /* 2n-1 */
+            {background-color: lightblue;
+            text-decoration: underline;}
+
+        tbody > tr:nth-child(even) /* 2n */
+            {background-color: lightyellow;
+            font-weight: bold;}
 
         td.num
             {text-align: right;}
@@ -27,12 +42,14 @@
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <h2>10 estados com maior população em 2022</h2>
+    
     <table>
+        <caption>10 estados com maior população em 2022</caption>
+
         <thead>
             <tr>
-                <th>Estado
-                <th>População
+                <th scope="col">Estado
+                <th scope="col" style="width: 100px;">População
             </tr>
         </thead>
 
@@ -81,7 +98,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes
+                <th scope="row">Total de habitantes
                 <td class="num"><strong>147.386.096</strong>
             </tr>
         </tfoot>
