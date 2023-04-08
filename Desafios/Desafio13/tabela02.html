@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tabelas</title>
+    <style>
+        body
+            {font-family: Arial, Helvetica, sans-serif;}
+
+        table
+            {border-collapse: collapse;
+            width: 300px;}
+
+        td
+            {border: 1.5px solid black;
+            padding: 10px;
+            text-align: center;}
+
+        td.dado
+            {background-image: linear-gradient(to left, red, orange, yellow );}
+
+        td.dado2
+            {background-image: linear-gradient(to top, red, orange, yellow );}
+
+        td.color
+            {background-image: linear-gradient(to bottom, rgb(10, 10, 219) ,rgb(46, 156, 192), rgb(48, 158, 20));}
+            
+    </style>
+</head>
+<body>
+    <h1>Desafio das Tabelas</h1>
+    <table>
+    <tr>
+        <td colspan="4" class="dado">A
+        <td rowspan="4" class="dado2">B
+    </tr>
+
+    <tr>
+        <td rowspan="4" class="dado2">C
+        <td class="color">D
+        <td class="color">E
+        <td class="color">F
+    </tr>
+
+    <tr>
+        <td class="color">G
+        <td class="color">H
+        <td class="color">I
+    </tr>
+
+    <tr>
+        <td class="color">J
+        <td class="color">L
+        <td class="color">M
+    </tr>
+
+    <tr>
+        <td colspan="4" class="dado">N
+    </tr>
+
+</table>
+</body>
+</html>
